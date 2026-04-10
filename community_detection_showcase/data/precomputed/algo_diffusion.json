@@ -1,0 +1,26 @@
+{
+  "Louvain": {
+    "avg_intra": 75841,
+    "avg_inter": 3047,
+    "intra_pct": 96.1,
+    "containment": 0.9612
+  },
+  "Label Propagation": {
+    "avg_intra": 77506,
+    "avg_inter": 1382,
+    "intra_pct": 98.2,
+    "containment": 0.9829
+  },
+  "Greedy Modularity": {
+    "avg_intra": 75731,
+    "avg_inter": 3157,
+    "intra_pct": 96.0,
+    "containment": 0.9601
+  },
+  "Fluid Communities": {
+    "avg_intra": 73617,
+    "avg_inter": 5271,
+    "intra_pct": 93.3,
+    "containment": 0.9324
+  }
+}

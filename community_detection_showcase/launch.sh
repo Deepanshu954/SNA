@@ -37,15 +37,25 @@ fi
 echo "  Dataset: $(wc -l < data/facebook_combined.txt) edges"
 
 # ── Step 3: Precompute (if not already done) ───────────────────────────
-if [ ! -f "data/precomputed/summary.json" ]; then
+if [ ! -f "data/precomputed/summary.json" ] || [ "$1" = "--recompute" ]; then
     echo ""
-    echo "🔬 Running precomputation (this takes 2-5 minutes, one time only)..."
+    echo "🔬 Running precomputation (4 algorithms, ~40s)..."
     echo ""
     python3 precompute.py
     echo ""
     echo "  Precomputation complete ✅"
 else
     echo "  Precomputed data found ✅"
+fi
+
+# ── Step 3b: Generate DOCX report (if not already done) ────────────────
+if [ ! -f "report/Community_Detection_Report.docx" ]; then
+    echo ""
+    echo "📝 Generating DOCX report..."
+    python3 generate_report.py
+    echo "  Report generated ✅"
+else
+    echo "  DOCX report found ✅"
 fi
 
 # ── Step 4: Launch Streamlit ───────────────────────────────────────────

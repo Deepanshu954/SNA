@@ -12,5 +12,23 @@
   "speed_ratio": 2.3,
   "containment": 0.9612,
   "avg_conductance": 0.0465,
-  "precompute_time_sec": 22.5
+  "algorithms": {
+    "Louvain": {
+      "Q": 0.8349,
+      "n_communities": 15
+    },
+    "Label Propagation": {
+      "Q": 0.7368,
+      "n_communities": 44
+    },
+    "Greedy Modularity": {
+      "Q": 0.7774,
+      "n_communities": 13
+    },
+    "Fluid Communities": {
+      "Q": 0.8127,
+      "n_communities": 15
+    }
+  },
+  "precompute_time_sec": 40.7
 }
