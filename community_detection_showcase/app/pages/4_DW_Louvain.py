@@ -176,10 +176,10 @@ st.markdown("### 📋 Detailed Comparison Table")
 
 comp_df = pd.DataFrame({
     "Algorithm": algorithms,
-    "Modularity Q": [0.61, 0.71, 0.78, round(base_Q, 4), "0.89 ★"],
-    "NMI": [0.42, 0.55, 0.65, 0.72, "0.81 ★"],
-    "Diffusion Containment": [0.55, 0.62, 0.70, 0.78, "0.85 ★"],
-    "Communities": [48, 18, 14, base_n, "11 ★"],
+    "Modularity Q": ["0.61", "0.71", "0.78", f"{base_Q:.4f}", "0.89 ★"],
+    "NMI": ["0.42", "0.55", "0.65", "0.72", "0.81 ★"],
+    "Diffusion Containment": ["0.55", "0.62", "0.70", "0.78", "0.85 ★"],
+    "Communities": ["48", "18", "14", str(base_n), "11 ★"],
     "Scalability": ["O(m²)", "O(n)", "O(m)", "O(n log n)", "O(N·m + n log n)"],
 })
 st.dataframe(comp_df, use_container_width=True, hide_index=True)

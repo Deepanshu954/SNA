@@ -150,10 +150,10 @@ st.markdown("### 📋 Algorithm Comparison Table")
 comp_df = pd.DataFrame({
     "Algorithm": ["Girvan-Newman", "Label Propagation", "Infomap",
                    "Louvain", "DW-Louvain ★"],
-    "Modularity Q": [0.61, 0.71, 0.78, summary["modularity_Q"], "0.89 ★"],
-    "NMI": [0.42, 0.55, 0.65, 0.72, "0.81 ★"],
-    "Diffusion Containment": [0.55, 0.62, 0.70, 0.78, "0.85 ★"],
-    "Communities": [48, 18, 14, summary["n_communities"], "11 ★"],
+    "Modularity Q": ["0.61", "0.71", "0.78", str(summary["modularity_Q"]), "0.89 ★"],
+    "NMI": ["0.42", "0.55", "0.65", "0.72", "0.81 ★"],
+    "Diffusion Containment": ["0.55", "0.62", "0.70", "0.78", "0.85 ★"],
+    "Communities": ["48", "18", "14", str(summary["n_communities"]), "11 ★"],
     "Scalability": ["O(m²)", "O(n)", "O(m)", "O(n log n)", "O(N·m + n log n)"],
 })
 st.dataframe(comp_df, use_container_width=True, hide_index=True)
@@ -170,19 +170,19 @@ st.markdown("---")
 st.markdown("### 📋 Full Summary Statistics")
 
 summary_df = pd.DataFrame([
-    {"Metric": "Nodes", "Value": summary["nodes"]},
-    {"Metric": "Edges", "Value": summary["edges"]},
-    {"Metric": "Average Degree", "Value": summary["avg_degree"]},
-    {"Metric": "Clustering Coefficient", "Value": summary["avg_clustering"]},
-    {"Metric": "Network Density", "Value": summary["density"]},
-    {"Metric": "Modularity Q", "Value": summary["modularity_Q"]},
-    {"Metric": "Communities Detected", "Value": summary["n_communities"]},
-    {"Metric": "Mean IC Spread", "Value": summary["mean_spread"]},
-    {"Metric": "Spread Std Dev", "Value": summary["spread_std"]},
+    {"Metric": "Nodes", "Value": str(summary["nodes"])},
+    {"Metric": "Edges", "Value": str(summary["edges"])},
+    {"Metric": "Average Degree", "Value": str(summary["avg_degree"])},
+    {"Metric": "Clustering Coefficient", "Value": str(summary["avg_clustering"])},
+    {"Metric": "Network Density", "Value": str(summary["density"])},
+    {"Metric": "Modularity Q", "Value": str(summary["modularity_Q"])},
+    {"Metric": "Communities Detected", "Value": str(summary["n_communities"])},
+    {"Metric": "Mean IC Spread", "Value": str(summary["mean_spread"])},
+    {"Metric": "Spread Std Dev", "Value": str(summary["spread_std"])},
     {"Metric": "Intra-Community %", "Value": f'{summary["intra_pct"]}%'},
     {"Metric": "Speed Ratio (inter/intra)", "Value": f'{summary["speed_ratio"]}×'},
-    {"Metric": "Diffusion Containment", "Value": summary["containment"]},
-    {"Metric": "Avg Conductance", "Value": summary["avg_conductance"]},
+    {"Metric": "Diffusion Containment", "Value": str(summary["containment"])},
+    {"Metric": "Avg Conductance", "Value": str(summary["avg_conductance"])},
 ])
 st.dataframe(summary_df, use_container_width=True, hide_index=True)
 
