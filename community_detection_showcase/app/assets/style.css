@@ -1,0 +1,104 @@
+/* Community Detection Showcase — Custom Styles */
+
+/* Metric card styling */
+.metric-card {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
+    border-left: 4px solid #1A3C5E;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.metric-card h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-card p {
+    margin: 0.3rem 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1A3C5E;
+}
+
+/* Comparison cards */
+.comparison-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.comparison-card.winner {
+    border: 2px solid #27AE60;
+    background: linear-gradient(135deg, #f0faf0 0%, #e8f5e9 100%);
+}
+
+/* Info callout */
+.info-callout {
+    background: linear-gradient(135deg, #eaf4fb 0%, #d6ebf5 100%);
+    border-left: 4px solid #2471A3;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    color: #1A3C5E;
+}
+
+.info-callout strong {
+    color: #2471A3;
+}
+
+/* Success callout */
+.success-callout {
+    background: linear-gradient(135deg, #eafaf1 0%, #d5f5e3 100%);
+    border-left: 4px solid #27AE60;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    color: #1A3C5E;
+}
+
+/* Warning callout */
+.warning-callout {
+    background: linear-gradient(135deg, #fef9e7 0%, #fdebd0 100%);
+    border-left: 4px solid #E67E22;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Section header */
+.section-header {
+    background: linear-gradient(90deg, #1A3C5E, #2471A3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+/* Pyvis graph container */
+.graph-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0 1rem;
+    color: #999;
+    font-size: 0.8rem;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+}
