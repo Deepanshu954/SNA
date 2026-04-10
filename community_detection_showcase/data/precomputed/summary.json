@@ -1,0 +1,16 @@
+{
+  "nodes": 4039,
+  "edges": 88234,
+  "avg_degree": 43.69,
+  "density": 0.01082,
+  "avg_clustering": 0.5982,
+  "modularity_Q": 0.8349,
+  "n_communities": 15,
+  "mean_spread": 2892.3,
+  "spread_std": 128.4,
+  "intra_pct": 96.1,
+  "speed_ratio": 2.3,
+  "containment": 0.9612,
+  "avg_conductance": 0.0465,
+  "precompute_time_sec": 22.5
+}
